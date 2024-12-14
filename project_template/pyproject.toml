@@ -25,3 +25,18 @@ markers = [
     "slow: mark test as slow (deselect with '-m \"not slow\"')",
     "smoke: business core tests",
 ]
+
+addopts = [
+   "--cov=.",
+   "--cov-config=.coveragerc",
+   "--cov-report",
+   "term-missing:skip-covered",
+   "--cov-fail-under=80"
+]
+
+[tool.coverage.run]
+omit = [
+   "*/tests/*.py",
+   "install-poetry.py",
+    "conftest/*"
+]
