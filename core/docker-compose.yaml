@@ -1,0 +1,10 @@
+services:
+  core:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - "./envs/.env"
+    restart: "always"
+    volumes:
+      - ".:/app"
