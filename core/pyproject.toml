@@ -2,7 +2,7 @@
 name = "core"
 version = "0.1.0"
 description = ""
-authors = ["Martyna Witkowska <mar.witkowska@gmail.com>"]
+authors = ["Cezary Szukiel <cezary.szukiel@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
